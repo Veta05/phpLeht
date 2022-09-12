@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 10px auto;
+    width: 1250px;
+    background-color:  #FCF5FE;
+}
+
+header{
+    background-image: url('logo1.jpg');
+    background-position: 50%;
+}
+header{
+    padding: 5px; /*ذںرƒرپر‚ذ¾ذµ ذ·ذ½ذ°ر‡ذµذ½ذ¸ذµ ذ¼ذµذ¶ذ´رƒ ر‚ذµذ؛رپر‚ذ¾ذ¼ ذ¸ ر€ذ°ذ¼ذ؛ذ¾ذ¹*/
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20px;
+
+}
+header h1{
+    font-size: 30px;
+    letter-spacing: 0.3cm;
+    font-family: Josefin, Sans; /*ر‚ذ¸ذ؟ رˆر€ذ¸ر„ر‚ذ°*/
+}
+footer{
+    background-image: url('logo1.jpg');
+    background-position: 50%;
+}
+footer{
+    padding: 5px; /*ذںرƒرپر‚ذ¾ذµ ذ·ذ½ذ°ر‡ذµذ½ذ¸ذµ ذ¼ذµذ¶ذ´رƒ ر‚ذµذ؛رپر‚ذ¾ذ¼ ذ¸ ر€ذ°ذ¼ذ؛ذ¾ذ¹*/
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/*ذ،ذ¾ذ·ذ´ذ°ذµذ¼ ذ½ذ°رپر‚ر€ذ¾ذ¹ذ؛ذ¸ ذ؟ر€ذ¸ ذ½ذ°ذ²ذµذ´ذµذ½ذ¸ذ¸ ذ½ذ° ذ°ذ؛ر‚ذ¸ذ²ذ½ر‹ذµ رپرپر‹ذ»ذ؛ذ¸*/
+nav ul li{
+    display: inline;
+    text-align: left;
+    padding: 10px;
+    overflow: visible;
+    font-size: 20px;
+    border-style: outset;
+}
+
+nav li{
+    padding: 1px;
+}
+
+nav li:hover{
+    background-color: #94c7ff;
+}
+nav {
+    margin: 2%;
+}
+/*ذ“ذ»ذ°ذ²ذ½ذ°رڈ رپر‚ر€ذ°ذ½ذ¸ر†ذ°, ذ´ذµذ»ذ°ذµذ¼ رپر‚ذ¾ذ»ذ±ذ¸ذ؛ذ¸*/
+main{
+    width: 100%;
+    margin: 5%;
+    position: relative;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    padding: 50px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 35%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+}
+
+a:hover{
+    padding: 5px;
+}
+
+nav a{
+    font-family: Anek, Tamil;
+    font-variant: small-caps;
+}
+
+h2{
+    text-transform: uppercase;
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: left;
+    background-color: #93D6F5;
+    border: solid 1px blue;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+    width: 400px;
+}
+#hidepic, #showpic {
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2px;
+}
+/*ذڑذ°ر€ر‚ذ¸ذ½ذ؛ذ¸ ذ½ذ° رپر‚ر€ذ°ذ½ذ¸ر†ر‹ ر€ذ°ذ±ذ¾ر‚*/
+#belka1{
+    width: 200px;
+    opacity: 0.6;
+    transition: opacity 2s linear;
+    transition: transform 1s linear;
+    position: relative;
+    left: 170px;
+    top: 0px;
+}
+
+#belka1:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 1;
+}
+#belka2{
+    width: 200px;
+    opacity: 0.6;
+    transition: opacity 2s linear;
+    transition: transform 1s linear;
+    position: relative;
+    left: 320px;
+    top: -50px;
+}
+#belka2:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 2;
+}
+#belka3{
+    width: 200px;
+    opacity: 0.6;
+    transition: opacity 2s linear;
+    transition: transform 1s linear;
+    position: relative;
+    left: 470px;
+    top: -100px;
+}
+#belka3:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 3;
+}
+#belka4{
+    width: 200px;
+    opacity: 0.6;
+    transition: opacity 2s linear;
+    transition: transform 1s linear;
+    position: relative;
+    left: 620px;
+    top: -150px;
+}
+#belka4:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 4;
+}
+#belka5{
+    width: 200px;
+    height: 200px;
+    opacity: 0.6;
+    transition: opacity 2s linear;
+    transition: transform 1s linear;
+    position: relative;
+    left: 770px;
+    top: -200px;
+
+}
+#belka5:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 5;
+}
